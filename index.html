@@ -29,6 +29,7 @@
             font-size: 36px;
         }
         .overlay {
+            display: none;
             position: absolute;
             top: 0;
             left: 0;
@@ -88,6 +89,9 @@
         background.remove();
     }, 1000);
 } 
+        document.querySelector('.overlay').addEventListener('click', function() {
+    this.style.display = 'none';
+            
     </script>
 </head>
 <body>
