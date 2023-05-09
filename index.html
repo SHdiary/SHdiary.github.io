@@ -65,7 +65,7 @@
         function changeBackground(imageUrl, index) {
     const background = document.querySelector('.background');
     const newBackground = background.cloneNode(true);
-    newBackground.style.backgroundImage = `url(${imageUrl})`
+    newBackground.style.backgroundImage = `url(${imageUrl})`;
     newBackground.style.opacity = 0;
     background.parentNode.insertBefore(newBackground, background);
     setTimeout(() => {
