@@ -84,6 +84,7 @@
         newBackground.style.opacity = 1;
         background.style.opacity = 0;
         document.querySelector('.foreground').textContent = messages[index];
+        document.querySelector('.overlay').style.display = 'block';
     }, 0);
     setTimeout(() => {
         background.remove();
